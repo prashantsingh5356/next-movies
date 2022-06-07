@@ -1,5 +1,4 @@
 import VideoPage from "../../components/VideoPage/VideoPage";
-import { useRouter } from "next/router";
 
 const tvDetail = (props) => {
   const tv = props.tv;
@@ -16,7 +15,6 @@ const tvDetail = (props) => {
     })
     .filter((cast, i) => i < 10);
 
-  const router = useRouter();
   return <VideoPage movie={tv} cast={cast} video={video} similar={similarTv} />;
 };
 
