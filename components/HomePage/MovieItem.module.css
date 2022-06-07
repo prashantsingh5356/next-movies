@@ -1,0 +1,27 @@
+.movie-item {
+  width: 200px;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+.movie-item__image {
+  width: 200px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.movie-item__image:hover {
+  transform: scale(1.1);
+  border-radius: 0%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.movie-item__title {
+  margin: 1rem 0 0 0;
+  text-align: center;
+  color: white;
+}

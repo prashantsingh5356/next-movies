@@ -1,0 +1,29 @@
+.type-movies {
+  width: 81%;
+  margin: 0 auto;
+}
+.type-movies__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow-x: scroll;
+  height: 407px;
+}
+.type-movies__header {
+  display: flex;
+  justify-content: space-between;
+}
+.type-movies__title h2 {
+  margin: 0.6rem 0;
+  color: white;
+}
+.type-movies__btn {
+  padding-top: 0.7rem;
+}
+.type-movies__btn button {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  border-color: magenta;
+  cursor: pointer;
+}

@@ -1,0 +1,75 @@
+.banner {
+  width: 100%;
+  height: 95vh;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-items {
+  padding: 2.5rem;
+  width: 85%;
+  height: 70vh;
+  margin: 0 auto;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-description {
+  width: 70%;
+}
+.banner-description h2 {
+  font-size: 2.8rem;
+}
+
+.banner-description p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.banner-image {
+  width: 20%;
+}
+
+.banner-image img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.watch-now {
+  background-color: red;
+  width: 25%;
+  height: 50px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-style: none;
+  cursor: pointer;
+}
+
+.watch-now:hover {
+  transform: scale(1.1);
+}
+
+.watch-now:active {
+  transform: scale(1);
+}
+
+.watch-trailer {
+  background-color: white;
+  width: 20%;
+  height: 40px;
+  margin-left: 1rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+.watch-trailer:hover {
+  transform: scale(1.1);
+}
+
+.watch-trailer:active {
+  transform: scale(1);
+}

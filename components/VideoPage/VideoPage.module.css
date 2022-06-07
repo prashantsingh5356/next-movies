@@ -1,0 +1,61 @@
+.movie-video__banner {
+  width: 100%;
+  height: 100vh;
+  padding-top: 8rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.movie-video__description {
+  width: 80%;
+  height: 70vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem;
+}
+.movie-video-description__poster {
+  width: 25%;
+  height: 55vh;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.movie-video-description__info {
+  color: white;
+  width: 70%;
+  font-weight: bold;
+}
+.movie-video-description__info h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.movie-video-description__details p {
+  font-size: 1.1rem;
+}
+
+.movie-video-description__cast {
+  width: 100%;
+}
+.cast-list {
+  width: 100%;
+  height: 24vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+
+.movie-videos__container {
+  width: 100%;
+  background-color: #000000ed;
+}
+.cast-list::-webkit-scrollbar {
+  display: none;
+}
+.similar-movies {
+  padding-top: 5rem;
+  width: 100;
+  background-color: #000000ed;
+}
