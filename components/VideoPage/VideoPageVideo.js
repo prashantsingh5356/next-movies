@@ -1,4 +1,4 @@
-import classes from "./videoPageVideo.module.css";
+import classes from "./VideoPageVideo.module.css";
 
 const VideoPageVideo = (props) => {
   const video = props.video[0];
