@@ -2,11 +2,11 @@ import VideoPage from "../../components/VideoPage/VideoPage";
 
 const MovieDetail = (props) => {
   const movie = props.movie;
-  const defaultCast = props.cast.cast;
+  const defaultCast = props.cast?.cast;
   const video = props.video;
   const similarMovies = props.similarMovie;
   const cast = defaultCast
-    .map((cast, i) => {
+    ?.map((cast, i) => {
       return {
         id: cast.id,
         name: cast.name,
@@ -67,7 +67,7 @@ export async function getStaticPaths() {
     };
   });
 
-  const finalPaths = [...popularPaths, ...topRatedPaths, ...trendingPaths];
+  const finalPaths = [...trendingPaths, ...topRatedPaths, ...popularPaths];
   return {
     fallback: true,
     paths: finalPaths,

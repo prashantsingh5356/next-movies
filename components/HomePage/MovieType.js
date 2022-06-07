@@ -6,7 +6,7 @@ const MovieType = (props) => {
   const router = useRouter();
   //   console.log(props.movies);
   //   console.log(props.type);
-  const movieList = props.movies.map((mov) => {
+  const movieList = props.movies?.map((mov) => {
     return (
       <MovieItem
         key={mov.id}

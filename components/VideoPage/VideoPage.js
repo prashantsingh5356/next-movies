@@ -5,10 +5,10 @@ import MovieType from "../HomePage/MovieType";
 
 const VideoPage = (props) => {
   const movieDetails = props.movie;
-  const movieDetailBackdrop = `https://image.tmdb.org/t/p/original${movieDetails.backdrop}`;
-  const movieDetailPoster = `https://image.tmdb.org/t/p/original${movieDetails.poster}`;
+  const movieDetailBackdrop = `https://image.tmdb.org/t/p/original${movieDetails?.backdrop}`;
+  const movieDetailPoster = `https://image.tmdb.org/t/p/original${movieDetails?.poster}`;
 
-  const castList = props.cast.map((cast) => {
+  const castList = props.cast?.map((cast) => {
     return (
       <VideoPageCast
         key={cast.id}
@@ -34,9 +34,9 @@ const VideoPage = (props) => {
             }}
           ></div>
           <div className={classes["movie-video-description__info"]}>
-            <h1>{movieDetails.title}</h1>
+            <h1>{movieDetails?.title}</h1>
             <div className={classes["movie-video-description__details"]}>
-              <p>{movieDetails.description}</p>
+              <p>{movieDetails?.description}</p>
             </div>
             <div className={classes["movie-video-description__cast"]}>
               <h2>Cast</h2>

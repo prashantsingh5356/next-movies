@@ -3,10 +3,10 @@ import VideoPage from "../../components/VideoPage/VideoPage";
 const tvDetail = (props) => {
   const tv = props.tv;
   const video = props.video;
-  const defaultCast = props.cast.cast;
+  const defaultCast = props.cast?.cast;
   const similarTv = props.similarTv;
   const cast = defaultCast
-    .map((cast) => {
+    ?.map((cast) => {
       return {
         id: cast.id,
         name: cast.name,
@@ -45,10 +45,11 @@ export async function getStaticPaths() {
     };
   });
 
-  const finalTvPaths = [...topRatedPaths, ...trendingPaths];
+  const finalPaths = [...topRatedPaths, ...trendingPaths];
+
   return {
     fallback: true,
-    paths: finalTvPaths,
+    paths: finalPaths,
   };
 }
 

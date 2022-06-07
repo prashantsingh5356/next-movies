@@ -1,15 +1,15 @@
 import classes from "./VideoPageVideo.module.css";
 
 const VideoPageVideo = (props) => {
-  const video = props.video[0];
+  const video = props.video ? props.video : "null";
   return (
     <div className={classes["movie-videos"]}>
       <h2 className={classes["video-title"]}>
-        {video.name ? video.name : "Trailer"}
+        {video?.name ? video?.name : "Trailer"}
       </h2>
       <div className={classes["movie-video__trailer"]}>
         <iframe
-          src={`https://www.youtube.com/embed/${video.key}`}
+          src={`https://www.youtube.com/embed/${video[0]?.key}`}
           height="600px"
           width="100%"
           allow="autoplay; encrypted-media"
